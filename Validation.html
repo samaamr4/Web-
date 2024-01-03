@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <title>Validation Page</title>
+</head>
+
+<body class="b1">
+    <nav>
+        <a class="nn" href="#signup">SignUp</a>
+        <a class="nn" href="#signin">signin</a>
+        <a class="nn" href="#forget">Fotget Password</a>
+    </nav>
+    <div class="allforms">
+        <div id="signup" class="signup">
+            <h1>SignUp Form</h1>
+            <label for="user">Username</label>
+            <input type="text" id="user"><br><br>
+            <label for="pass">Password</label>
+            <input type="text" id="pass"><br><br>
+            <label for="age">Age</label>
+            <input type="number" id="age"><br><br>
+            <label>Gender</label>
+            <input type="radio" class="gen" name="gend" value="male" id="male"><label>Male</label>
+            <input type="radio" class="gen" name="gend" value="female" id="female"><label>Female</label><br><br>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone"><br><br>
+            <input type="button" id="button" onclick="signup()" value="Submit">
+        </div>
+        <div id="signin" class="signin">
+            <h1>SignIn Form</h1>
+            <label for="username">Username</label>
+            <input type="text" id="username"><br><br>
+            <label for="passes">Password</label>
+            <input type="text" id="passes"><br><br>
+            <button id="buttonlog" onclick="login()">Login</button>
+            <button id="buttonsignup">Signup</button>
+            <button id="buttonforget">Fprget</button>
+        </div>
+        <div id="forget" class="forget">
+            <h1>Forget Password Form</h1>
+            <label for="usernames">Username</label>
+            <input type="text" id="usernames"><br><br>
+            <label for="npass">New Password</label>
+            <input type="text" id="npass"><br><br>
+            <button id="buttonupdate" onclick="forgetpass()">Update</button>
+        </div>
+    </div>
+</body>
+
+</html>
